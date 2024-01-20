@@ -52,6 +52,7 @@ local plugins = {
       "javascriptreact",
       "typescript",
       "typescriptreact",
+      "html",
     },
     config = function()
       require("nvim-ts-autotag").setup()
@@ -67,6 +68,7 @@ local plugins = {
         "typescript",
         "tsx",
         "css",
+        "html",
       }
       return opts
     end,
