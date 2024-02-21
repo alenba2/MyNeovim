@@ -74,6 +74,15 @@ local plugins = {
     end,
   },
   {
+    "nvim-tree/nvim-tree.lua",
+    opts = {
+      view = {
+        side = "right",
+      },
+    },
+  },
+
+  {
     "folke/noice.nvim",
     event = "VeryLazy",
 
@@ -89,6 +98,11 @@ local plugins = {
       --   If not available, we use `mini` as the fallback
       "rcarriga/nvim-notify",
     },
+  },
+  "ray-x/navigator.lua",
+  requires = {
+    { "ray-x/guihua.lua", run = "cd lua/fzy && make" },
+    { "neovim/nvim-lspconfig" },
   },
 }
 

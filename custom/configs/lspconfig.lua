@@ -4,8 +4,8 @@ local capabilities = base.capabilities
 
 local lspconfig = require "lspconfig"
 
-local servers = { "tsserver", "angularls", "tailwindcss", "eslint", "cssls" }
--- "tsserver",
+local servers = { "angularls", "tsserver", "tailwindcss", "eslint", "cssls" }
+-- "angularls"
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
