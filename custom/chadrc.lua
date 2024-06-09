@@ -13,6 +13,7 @@ M.ui = {
       table.insert(modules, modules[1])
       table.remove(modules, 1)
       -- or modules[1] = ""
+      -- REMOVES TOGGLE AND X BUTTON
       table.remove(modules, #modules - 1)
     end,
   },
